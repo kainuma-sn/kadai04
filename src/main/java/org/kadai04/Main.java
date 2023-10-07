@@ -21,7 +21,7 @@ public class Main {
 
         ////その他
         //マルチスレッド処理
-//        FunctionSleeping.start(); //実装間に合わず
+//        FunctionSleeping.start(); //FunctionCatalogへの実装間に合わず。実行してマルチスレッドの処理を確認することはできます
 
         //例外と例外処理の練習
 //        FunctionError.start();

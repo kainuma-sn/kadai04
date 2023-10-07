@@ -276,6 +276,7 @@ public class FunctionCatalog {
                 ));
     }
 
+    //"drum"を含むMapデータを抽出しMapを更新する
     public void extractMap(String includedName) {
         catalogMap = catalogMap.entrySet().stream()
                 .filter(entry -> entry.getKey().contains(includedName))//キーがドラムを含む要素のみを取り出す

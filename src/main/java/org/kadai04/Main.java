@@ -10,7 +10,7 @@ public class Main {
 
         //課題
         //streamを動かしてみる
-        //課題箇所：java/Function/FunctionCatalog.java　92行-111行、　244行-287行
+        //課題箇所：java/Function/FunctionCatalog.java　92行-111行、　244行-288行
         FunctionCatalog.start();
         //外から呼び出しても使えます
 //        FunctionCatalog piano = new FunctionCatalog();

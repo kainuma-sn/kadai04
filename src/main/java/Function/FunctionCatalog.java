@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 
-//楽器ソフトウェアインスタンスを管理するクラス
+//カタログインスタンスを管理するクラス
 public class FunctionCatalog {
     private final List<ObjectCatalog> catalogList;
     private Map<String, List<Integer>> catalogMap;

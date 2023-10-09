@@ -125,15 +125,7 @@ public class ObjectCatalog {
     //コンストラクタのオーバーロード
     //引数として、製品名を持つString型のproductName、製品価格を持つint型のproductPrice、在庫数を持つint型のproductStockがある
     //引数のproductName、productPrice、productStockをDataItem.javaのproductName、productPrice、productStockに代入する
-    public ObjectCatalog(String productName, int productPrice, int productStock) {
-        this.productName = productName;
-        this.productPrice = productPrice;
-        this.productStock = productStock;
-        this.myService = null;//依存性注入を行わない場合はnullを代入します
-        productList.add(this.productPrice);//productPriceをList型のproductListに追加する
-        productList.add(this.productStock);//productStockをList型のproductListに追加する
-    }
-
+    //InterfaceMyServiceクラス型のmyServiceを代入することで、依存性注入を実装
     public ObjectCatalog(String productName, int productPrice, int productStock, InterfaceMyService myService) {
         this.productName = productName;
         this.productPrice = productPrice;

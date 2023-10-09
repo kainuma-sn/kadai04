@@ -50,7 +50,7 @@
 #### 呼び出したコード
 
 - FunctionCatalogクラス startメソッド
-> https://github.com/kainuma-sn/kadai04/blob/383e0fc4b4654d5a384ced43fce8f06c47725305/src/main/java/Function/FunctionCatalog.java#L28-L116
+> https://github.com/kainuma-sn/kadai04/blob/184edf03e3c2609905a9afc3f1543d727d752ae9/src/main/java/Function/FunctionCatalog.java#L28-L116
 
 <br>
 ---
@@ -143,14 +143,14 @@
 
 #### 実行したコード
 
--FunctionCatalogクラス startメソッド
+- FunctionCatalogクラス startメソッド
 > https://github.com/kainuma-sn/kadai04/blob/0148b2182ebe49a9e6b832b3721b55c55bfcef48/src/main/java/Function/FunctionCatalog.java#L50-L54
 
 <br>
 
 #### 呼び出したコード
 
--FunctionCatalogクラス removeListメソッド
+- FunctionCatalogクラス removeListメソッド
 > https://github.com/kainuma-sn/kadai04/blob/0148b2182ebe49a9e6b832b3721b55c55bfcef48/src/main/java/Function/FunctionCatalog.java#L141-L152
 
 <br>
@@ -161,5 +161,48 @@
 
 <br>
 
-### 6.
+### 6.drumsリスト内全てのインスタンスデータを表示する
 
+#### 実行したコード
+
+- FunctionCatalog startメソッド
+> https://github.com/kainuma-sn/kadai04/blob/0148b2182ebe49a9e6b832b3721b55c55bfcef48/src/main/java/Function/FunctionCatalog.java#L56-L57
+
+<br>
+
+#### 呼び出したコード
+
+- FunctionCatalogクラス printAllInfoメソッド
+> https://github.com/kainuma-sn/kadai04/blob/0148b2182ebe49a9e6b832b3721b55c55bfcef48/src/main/java/Function/FunctionCatalog.java#L155-L167
+
+<br>
+
+#### 出力結果
+
+> ![image](https://github.com/kainuma-sn/kadai04/assets/145829664/8ed2f62c-b584-466a-9e66-9e3b0be8747b)
+
+<br>
+
+### 7.drumsリストの指定したインスタンスデータを表示する
+
+#### 実行したコード
+
+- FunctionCatalogクラス startメソッド
+> https://github.com/kainuma-sn/kadai04/blob/0148b2182ebe49a9e6b832b3721b55c55bfcef48/src/main/java/Function/FunctionCatalog.java#L59-L60
+
+<br>
+
+#### 呼び出したコード
+
+- FunctionCatalogクラス putListメソッド
+> https://github.com/kainuma-sn/kadai04/blob/0148b2182ebe49a9e6b832b3721b55c55bfcef48/src/main/java/Function/FunctionCatalog.java#L132-L139
+
+<br>
+
+#### 出力結果
+
+![image](https://github.com/kainuma-sn/kadai04/assets/145829664/baf97882-fa0e-4098-bf9f-025e9286d41b)
+
+<br>
+
+### 8.

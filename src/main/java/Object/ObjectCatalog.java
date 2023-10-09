@@ -118,7 +118,7 @@ public class ObjectCatalog {
     ////コンストラクタ
     //クラスコンストラクタ
     //シングルトン
-    public ObjectCatalog(InterfaceMyService myService) {
+    private ObjectCatalog(InterfaceMyService myService) {
         this.myService = myService;
     }
 

@@ -257,10 +257,10 @@ public class FunctionCatalog {
         catalogMap = catalogMap.entrySet().stream()
                 .sorted(Map.Entry.comparingByKey(Comparator.reverseOrder())) // 降順に並び替え
                 .collect(Collectors.toMap(
-                        Map.Entry::getKey,
-                        Map.Entry::getValue,
-                        (e1, e2) -> e1,
-                        LinkedHashMap::new
+                        Map.Entry::getKey, //キーの保持
+                        Map.Entry::getValue, //値の保持
+                        (e1, e2) -> e1, //同じキーなら値を更新
+                        LinkedHashMap::new //LinkedHashMapに変換
                 ));
     }
 

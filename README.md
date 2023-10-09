@@ -87,7 +87,7 @@
 #### 実行したコード<br>
 
 - main.javaクラス mainメソッド<br>
-> https://github.com/kainuma-sn/kadai04/blob/b2679a9d30083bec44db5b3fb71f4577586d8091/src/main/java/org/kadai04/Main.java#L11-L14<br>
+> https://github.com/kainuma-sn/kadai04/blob/ae6158e3bf18bb5165212ecb806653c133593bed/src/main/java/org/kadai04/Main.java#L1-L31<br>
 
 <br>
 

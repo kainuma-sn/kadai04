@@ -12,9 +12,9 @@ public class ErrorCatalog extends Exception {
         super();
     }
 
-    //    int型iとString型valueを引数に持つcheckProductNameクラス
-//    引数String型のproductNameがnull又は空白の場合、エラーを返す
-//    引数String型のproductNameがどちらでもない場合、処理を終了する
+    //    int型iとString型valueを引数に持つcheckNullProductNameメソッド
+    //    引数String型のproductNameがnull又は空白の場合、エラーを返す
+    //    引数String型のproductNameがどちらでもない場合、処理を終了する
     //キーと値の入力検証
     public static void checkNullProductName(String productName) {
         if (productName == null || productName.isEmpty()) {
@@ -22,7 +22,7 @@ public class ErrorCatalog extends Exception {
         }
     }
 
-    //引数List<Integer>型のvalueを持つsearchProductInfoクラス
+    //引数List<Integer>型のvalueを持つcheckNullorEmptyProductNameメソッド
     //productNameがnull又は空の場合、エラーを返す
     //productNameがnull又は空でもない場合、処理を終了する
     public static void checkNullorEmptyProductName(List<Integer> productName) {

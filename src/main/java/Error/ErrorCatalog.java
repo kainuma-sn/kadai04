@@ -25,7 +25,7 @@ public class ErrorCatalog extends Exception {
     //引数List<Integer>型のvalueを持つsearchProductInfoクラス
     //productNameがnull又は空の場合、エラーを返す
     //productNameがnull又は空でもない場合、処理を終了する
-    public static void searchProductInfo(List<Integer> productName) {
+    public static void checkNullorEmptyProductName(List<Integer> productName) {
         if (productName == null || productName.isEmpty()) {
             throw new IllegalArgumentException("該当する製品はありません");
         }

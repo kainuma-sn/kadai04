@@ -22,7 +22,7 @@ public class FunctionCatalog {
         catalogMap = new HashMap<>();
         //HashMapを使用し、キーのStringとListのInteger型のmap型のcatalogMapBackupを作成する
         catalogMapBackup = new HashMap<>();
-        // 依存性の具体的な実装をインスタンス化
+        
     }
 
     //実行
@@ -120,7 +120,7 @@ public class FunctionCatalog {
         InterfaceMyService myService = new FunctionMyServiceImpl();
         try {
             ErrorCatalog.checkNullProductName(productName);
-            catalogList.add(new ObjectCatalog(productName, productPrice, productStock, myService));//this.myServiceの理由が曖昧なため、理解すること
+            catalogList.add(new ObjectCatalog(productName, productPrice, productStock, myService));
             System.out.println(productName + "　の製品登録が完了しました");
             System.out.println("--------------");
         } catch (IllegalArgumentException error) {

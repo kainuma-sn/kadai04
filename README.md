@@ -4,8 +4,6 @@
 
 <br><br><br>
 
-<br><br><br>
-
 ## 1.課題：Streamを動かしてみよう
 
 <br>

@@ -1,6 +1,8 @@
 package org.kadai04;
 
 import Function.FunctionCatalog;
+import Function.FunctionSleeping;
+import Function.FunctionError;
 import Interface.InterfaceMyService;
 
 public class Main {

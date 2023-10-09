@@ -41,7 +41,7 @@ public class FunctionCatalog {
         drums.addList(null, 1, 1);
         drums.addList("TOKYO SCORING DRUM KITS", 44671, 0);
 
-        //リスト内のインスタンスデータを全て、Mapに代入する
+        //addListメソッドを使いcatalogListに新たなギターソフトウェアのインスタンスを追加する
         guitars.addList("Hummingbird", 32890, 17);
 
         //指定したリストを変更する

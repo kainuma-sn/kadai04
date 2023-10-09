@@ -1,8 +1,6 @@
 package org.kadai04;
 
 import Function.FunctionInstruments;
-import Function.FunctionSleeping;
-import Function.FunctionError;
 import Interface.InterfaceMyService;
 
 public class Main {
@@ -14,9 +12,7 @@ public class Main {
         FunctionInstruments instruments = new FunctionInstruments();
         instruments.start();
 
-//        //課題
-//        //streamを動かしてみる
-//        //課題箇所：java/Function/FunctionCatalog.java　91行-110行、　243行-287行
+        //Instrumentsを管理する
 //        FunctionCatalog.start();
 //        //外から呼び出しても使えます
 //        FunctionCatalog piano = new FunctionCatalog();

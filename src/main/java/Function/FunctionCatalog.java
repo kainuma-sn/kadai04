@@ -243,12 +243,12 @@ public class FunctionCatalog {
     //インスタンスのmapを昇順に並べ替える
     public void sortAscMap() {
         catalogMap = catalogMap.entrySet().stream()
-                .sorted(Map.Entry.comparingByKey()) //昇順に並び替え
-                .collect(Collectors.toMap( //HashMapからLinkedHashMapに使用。元々LinkedHashMapだったり、同じ型に入れる場合は不要。
+                .sorted(Map.Entry.comparingByKey())
+                .collect(Collectors.toMap( //昇順に並び替え
                         Map.Entry::getKey, // キーを保持
                         Map.Entry::getValue, // 値を保持
-                        (e1, e2) -> e1, // 重複時のマージロジック (今回は上書き)
-                        LinkedHashMap::new // LinkedHashMapに収集して順序を保持
+                        (e1, e2) -> e1, //同じキーなら値を更新
+                        LinkedHashMap::new //LinkedHashMapに変換
                 ));
     }
 
@@ -275,10 +275,10 @@ public class FunctionCatalog {
                 ));
     }
 
-    //"drum"を含むMapデータを抽出しMapを更新する
+    //String型の引数includedNameを含むMapデータを抽出しMapを更新する
     public void extractMap(String includedName) {
         catalogMap = catalogMap.entrySet().stream()
-                .filter(entry -> entry.getKey().contains(includedName))//キーがドラムを含む要素のみを取り出す
+                .filter(entry -> entry.getKey().contains(includedName))//キーがincludedNameを含む要素のみを取り出す
                 .collect(Collectors.toMap(
                         Map.Entry::getKey,//キーの保持
                         Map.Entry::getValue,//値の保持

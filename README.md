@@ -3,9 +3,6 @@
 主にmain.javaで実行した `FunctionCatalog.start()`について説明します。
 
 <br><br><br>
-※以下、FunctionCatalog.start()メソッドの説明
-
-## 目次
 
 <br><br><br>
 

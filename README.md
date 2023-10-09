@@ -17,6 +17,9 @@
 #### 呼び出したコード<br>
 - FunctionCatalog sortDescMapメソッド<br>
 > https://github.com/kainuma-sn/kadai04/blob/c0e094c3fae6cde57c7a753239bfb9e21a58d590/src/main/java/Function/FunctionCatalog.java#L255-L265<br>
+- FunctionCatalog printMap<br>
+> https://github.com/kainuma-sn/kadai04/blob/2da6501cc28bfda9cfecd4e5a1489dd3f9509cd6/src/main/java/Function/FunctionCatalog.java#L217-L228<br>
+※以降、printMap省略<br>
 #### 出力結果<br>
 > ![image](https://github.com/kainuma-sn/kadai04/assets/145829664/9088ac6a-e5d8-47fe-adee-2e295f4097db)
 <br>

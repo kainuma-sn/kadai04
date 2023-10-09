@@ -190,7 +190,7 @@ public class FunctionCatalog {
     public void searchMap(String productName) {
         System.out.println(productName + "　の検索を開始します");
         try {
-            ErrorCatalog.searchProductInfo(catalogMap.get(productName));
+            ErrorCatalog.checkNullorEmptyProductName(catalogMap.get(productName));
             System.out.println(productName + "：[価格/在庫]" + catalogMap.get(productName));
         } catch (IllegalArgumentException e) {
             System.out.println(e);

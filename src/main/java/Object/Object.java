@@ -48,42 +48,20 @@ public class Object {
 //    ObjectRoot object1 = new ObjectRoot(20, 20);
 //    ObjectRoot object2 = new ObjectRoot(object1);
 //    object1をobject2にシャロ―コピーする
-//
-//
-//    ////内部クラス
-//    //SetMethods
-//    private class SetMethods{
-//        public void setStaticMethod(int staticDefault){
-//            setStaticDefault(staticDefault);
-//        }
-//        public void setInstanceMethod(int instanceDefault){
-//            setInstanceDefault(instanceDefault);
-//        }
-//    }
-//    //GetMethods
-//    private class GetMethods{
-//        public int getStaticMethods() {
-//            return getStaticDefault();
-//        }
-//        public int getInstanceMethods(){
-//            return getInstanceDefault();
-//        }
-//    }
-//
-//
+
 //    ////getterとsetter
 //    //getter
-//    private int getStaticDefault(){
+//    public int getStaticDefault(){
 //        return ObjectRoot.staticDefault;
 //    }
-//    private int getInstanceDefault(){
+//    public int getInstanceDefault(){
 //        return this.instanceDefault;
 //    }
 //    //setter
-//    private void setStaticDefault(int staticDefault){
+//    public void setStaticDefault(int staticDefault){
 //        ObjectRoot.staticDefault = staticDefault;
 //    }
-//    private void setInstanceDefault(int instanceDefault){
+//    public void setInstanceDefault(int instanceDefault){
 //        this.instanceDefault = instanceDefault;
 //    }
 

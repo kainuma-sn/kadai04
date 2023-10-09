@@ -10,24 +10,6 @@ public class FunctionError {
     //検証用int型errorValue
     private int errorValue;
 
-    //実行
-    public static void start() {
-        //try-catchは複数のcatchを書ける、finallyで処理完了後の手続を入れられる
-        //下記以外のエラーは適宜調べる
-        System.out.println("----------------------------------------");
-        FunctionError functionError = new FunctionError();
-
-        //nullPointerExceptionの実行
-        functionError.nullPointerException();
-
-        //arrayIndexOutOfBoundsExceptionの実行
-        functionError.arrayIndexOutOfBoundsException();
-
-        //ArithmeticExceptionの実行
-        functionError.ArithmeticException();
-
-    }
-
     //////実行時エラー
     private void nullPointerException() {
         System.out.println("例外：NullPointerException");//nullで生じるエラー
@@ -41,7 +23,7 @@ public class FunctionError {
         //フィールドにアクセス
         try {
             ObjectCatalog objectCatalog = null;
-            int fieldValue = objectCatalog.new GetProduct().getInProductPrice(); // NullPointerException
+            int fieldValue = objectCatalog.getProductPrice(); // NullPointerException
         } catch (NullPointerException e) {
             System.out.println("フィールドにアクセス：" + e);
         }

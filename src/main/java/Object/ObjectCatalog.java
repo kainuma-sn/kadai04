@@ -136,77 +136,35 @@ public class ObjectCatalog {
     }
     //コピーコンストラクタ
 
-    ////内部クラス
-    //GetMethods
-    public class GetProduct {
-        //製品名を格納するString型のProductNameを返す
-        public String getInProductName() {
-            return getProductName();
-        }
-
-        //製品価格を格納するString型のproductPriceを返す
-        public int getInProductPrice() {
-            return getProductPrice();
-        }
-
-        //在庫数を格納するString型のproductStockを返す
-        public int getInProductStock() {
-            return getProductStock();
-        }
-
-        //製品価格productPriceと在庫数productStockが格納されたList型のproductListを返す
-        public List<Integer> getInProductList() {
-            return getProductList();
-        }
-    }
-
-    //SetMethods
-    public class SetProduct {
-        //製品名を格納するString型のproductNameを変更する
-        public void setInProductName(String productName) {
-            setProductName(productName);
-        }
-
-        //製品価格を格納するint型のproductPriceを変更する
-        public void setInProductPrice(int productPrice) {
-            setProductPrice(productPrice);
-        }
-
-        //在庫数を格納するint型のproductStockを変更する
-        public void setInProductStock(int productStock) {
-            setProductStock(productStock);
-        }
-    }
-
     ////getterとsetter
     //getter
-    private String getProductName() {
+    public String getProductName() {
         return this.productName;
     }
 
-    private int getProductPrice() {
+    public int getProductPrice() {
         return this.productPrice;
     }
 
-    private int getProductStock() {
+    public int getProductStock() {
         return this.productStock;
     }
 
-    private List<Integer> getProductList() {
+    public List<Integer> getProductList() {
         return this.productList;
     }
 
 
     //setter
-    private void setProductName(String productName) {
+    public void setProductName(String productName) {
         this.productName = productName;
     }
 
-    private void setProductPrice(int productPrice) {
+    public void setProductPrice(int productPrice) {
         this.productPrice = productPrice;
     }
 
-    private void setProductStock(int productStock) {
+    public void setProductStock(int productStock) {
         this.productStock = productStock;
     }
 

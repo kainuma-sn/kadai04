@@ -11,18 +11,14 @@ import java.util.Map;
 //デシリアライズを行う
 //このやり方だと危ないとintellijのコンパイルで指摘を受けたので、理由を調べることを頭に入れておく
 public class FunctionDeserialization {
-    //実行
-    public static void start(){
-        //デフォルトメソッド
-    }
 
     //Map型String,List<Integer>のデシリアライズ
-    public Map<String, List<Integer>> deserializationCatalog(){
+    public Map<String, List<Integer>> deserializationCatalog() {
         Map<String, List<Integer>> deserializedCatalog = null;
-        try(FileInputStream fileInputStream = new FileInputStream("convert.ser");
-            ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream)){
+        try (FileInputStream fileInputStream = new FileInputStream("convert.ser");
+             ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream)) {
             deserializedCatalog = (Map<String, List<Integer>>) objectInputStream.readObject();
-        }catch (IOException | ClassNotFoundException e){
+        } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();//デバッグ用
         }
         return deserializedCatalog;

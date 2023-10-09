@@ -2,13 +2,71 @@
 
 主にmain.javaで実行した `FunctionCatalog.start()`について説明します。
 
-<br>
+<br><br><br>
+※以下、FunctionCatalog.start()メソッドの説明
 
 ## 目次
 
+<br><br><br>
+
+## 1.課題：Streamを動かしてみよう
+
 <br>
 
-## ファイル構造
+### 1.降順に並び替える
+
+#### 初期データ
+> ![image](https://github.com/kainuma-sn/kadai04/assets/145829664/de87628e-c1aa-4d6f-83b1-ee061daf80fa)
+<br>
+#### 実行したコード
+- FunctionCatalog startメソッド
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L88-L89
+<br>
+#### 呼び出したコード
+- FunctionCatalog sortDescMapメソッド
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L255-L265
+<br>
+#### 出力結果
+> ![image](https://github.com/kainuma-sn/kadai04/assets/145829664/9088ac6a-e5d8-47fe-adee-2e295f4097db)
+<br>
+
+### 2.昇順に並び替える
+#### 初期データ
+> ![image](https://github.com/kainuma-sn/kadai04/assets/145829664/4053aa9f-ed55-4486-83bc-36918a43802e)
+<br>
+#### 実行したコード
+- FunctionCatalog startメソッド
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L97-L98
+<br>
+#### 呼び出したコード
+- FunctionCatalog sortAscMapメソッド
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L243-L253
+<br>
+#### 出力結果
+> ![image](https://github.com/kainuma-sn/kadai04/assets/145829664/0770dba6-c00c-44ba-940a-89c713ea202b)
+<br>
+
+### 3.Mapキーを全て小文字にし、Mapキーに"drum"を含むMapデータを抽出し、更新する
+#### 初期データ
+> ![image](https://github.com/kainuma-sn/kadai04/assets/145829664/6d4fcf3f-3eb2-44ed-a2a6-ad42c7aee558)
+<br>
+#### 実行したコード
+- FunctionCatalog startメソッド
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L103-L110
+<br>
+#### 呼び出したコード
+- FunctionCatalog convertLowerCaseメソッド
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L267-L276
+<br>
+- FunctionCatalog extractMapメソッド
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L278-L288
+<br>
+#### 出力結果
+> ![image](https://github.com/kainuma-sn/kadai04/assets/145829664/84d484aa-ebc0-479c-beba-a9e32a3d95c5)
+
+<br><br><br>
+
+## 2.ファイル構造
 
 > ![image](https://github.com/kainuma-sn/kadai04/assets/145829664/e0cdcc29-a187-45a8-8acf-0057c4443ede)
 
@@ -32,9 +90,9 @@
 - ### Error<br>
   - 例外を作成し例外処理を行うフォルダ
 
-<br><br>
+<br><br><br>
 
-## 実行
+## 3.実行
 
 <br>
 
@@ -50,7 +108,7 @@
 #### 呼び出したコード
 
 - FunctionCatalogクラス startメソッド
-> https://github.com/kainuma-sn/kadai04/blob/184edf03e3c2609905a9afc3f1543d727d752ae9/src/main/java/Function/FunctionCatalog.java#L28-L116
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L28-L115
 
 <br>
 ---
@@ -95,7 +153,7 @@
 <br>
 
 - ErrorCatalogクラス checkNullProductNameメソッド
-> https://github.com/kainuma-sn/kadai04/blob/b343d7ba391996ad2d6cad89b0a4e0ddb0a83439/src/main/java/Error/ErrorCatalog.java#L15-L23
+> https://github.com/kainuma-sn/kadai04/blob/a87150592aa3a0f918e3f258e7e84240b13039bb/src/main/java/Error/ErrorCatalog.java#L15-L23
   
 <br>
 
@@ -183,7 +241,7 @@
 
 <br>
 
-### 7.drumsリストの指定したインスタンスデータを表示する
+### 7.guitarsリストの指定したインスタンスデータを表示する
 
 #### 実行したコード
 
@@ -195,14 +253,112 @@
 #### 呼び出したコード
 
 - FunctionCatalogクラス putListメソッド
-> https://github.com/kainuma-sn/kadai04/blob/0148b2182ebe49a9e6b832b3721b55c55bfcef48/src/main/java/Function/FunctionCatalog.java#L132-L139
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L59-L60
 
 <br>
 
 #### 出力結果
 
-![image](https://github.com/kainuma-sn/kadai04/assets/145829664/baf97882-fa0e-4098-bf9f-025e9286d41b)
+> ![image](https://github.com/kainuma-sn/kadai04/assets/145829664/3f52c697-c17f-4063-ab25-970af341bcc9)
 
 <br>
 
-### 8.
+### 8.drumsとguitarsリストをそれぞれMapに代入する
+
+#### 実行したコード
+
+- FunctionCatalogクラス startメソッド
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L62-L64
+
+<br>
+
+#### 呼び出したコード
+
+- FunctionCatalogクラス
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L181-L187
+
+<br>
+
+- ObjectCatalogクラス GetProduct内部クラス
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Object/ObjectCatalog.java#L148-L169
+
+<br>
+
+- ObjectCatalogクラス getter
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Object/ObjectCatalog.java#L190-L205
+
+<br>
+
+### 9.drumsとguitarsmapのキーを検索し、値を表示する
+
+#### 実行したコード
+
+- FunctionCatalogクラス startメソッド
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L66-L72
+
+<br>
+
+#### 呼び出したコード
+
+- FunctionCatalogクラス searchMapメソッド
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L189-L200
+
+<br>
+
+- ErrorCatalogクラス checkNullOrEmptyProductNameメソッド
+> https://github.com/kainuma-sn/kadai04/blob/80e25e0a7230a50cc45555786842da1218e3eedc/src/main/java/Error/ErrorCatalog.java#L25-L32
+
+#### 出力結果
+
+> ![image](https://github.com/kainuma-sn/kadai04/assets/145829664/aa1a3665-1392-4263-b14b-2f0c074a4b2d)
+
+<br>
+
+### 10.drumsインスタンスmapのバックアップをディープコピーで作成し、表示する
+
+#### 実行したコード
+
+- FunctionCatalogクラス startメソッド
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L74-L89
+
+#### 呼び出されたコード
+
+- FunctionCatalogクラス backupMapメソッド
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L202-L215
+
+<br>
+
+- FunctionDeepCopyクラス
+> https://github.com/kainuma-sn/kadai04/blob/80e25e0a7230a50cc45555786842da1218e3eedc/src/main/java/Function/FunctionDeepCopy.java#L1-L25
+
+<br>
+
+- FunctionSerializationクラス
+> https://github.com/kainuma-sn/kadai04/blob/80e25e0a7230a50cc45555786842da1218e3eedc/src/main/java/Function/FunctionSerialization.java#L1-L24
+
+<br>
+
+- FunctionDeserializationクラス
+> https://github.com/kainuma-sn/kadai04/blob/80e25e0a7230a50cc45555786842da1218e3eedc/src/main/java/Function/FunctionDeserialization.java#L1-L30
+
+<br>
+
+#### 出力結果
+
+> ![image](https://github.com/kainuma-sn/kadai04/assets/145829664/e863ae91-f25a-465f-96a2-4c67d1f5d2d1)
+
+<br>
+
+### 11.drumsインスタンスmapのバックアップをディープコピーで作成し、表示する
+
+#### 実行したコード
+
+- FunctionCatalogクラス インスタンスフィールド
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L4
+<br>
+- FunctionCatalogクラス startメソッド
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L37
+<br>
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L112-L113
+- FunctionCatalogクラス addリストメソッド
+> https://github.com/kainuma-sn/kadai04/blob/bb637a9de3c26b1700f88ebb4f8a8a78a0165622/src/main/java/Function/FunctionCatalog.java#L117-L129

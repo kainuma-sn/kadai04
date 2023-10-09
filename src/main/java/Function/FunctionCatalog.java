@@ -57,10 +57,11 @@ public class FunctionCatalog {
         drums.printAllInfo();
 
         //指定したリストのインスタンスデータを表示する
-        drums.printInfo(1);
+        guitars.printInfo(1);
 
         //リスト内のインスタンスデータを全て、Mapに代入する
         drums.createMap();
+        guitars.printMap();
 
         //検索した内容が含まれるmapキーのデータを出力する
         drums.searchMap("SUPERIOR DRUMMER 3");
@@ -84,7 +85,6 @@ public class FunctionCatalog {
         //HashMapの特徴として、要素が順番に並ばないことがある
         //Mapデータを表示する
         drums.printMap();
-        guitars.printMap();
 
         //BackupMapデータを表示する
         drums.printBackupMap();

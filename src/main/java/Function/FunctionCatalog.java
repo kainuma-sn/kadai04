@@ -22,7 +22,6 @@ public class FunctionCatalog {
         catalogMap = new HashMap<>();
         //HashMapを使用し、キーのStringとListのInteger型のmap型のcatalogMapBackupを作成する
         catalogMapBackup = new HashMap<>();
-        
     }
 
     //実行

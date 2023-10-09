@@ -61,7 +61,7 @@ public class FunctionCatalog {
 
         //リスト内のインスタンスデータを全て、Mapに代入する
         drums.createMap();
-        guitars.printMap();
+        guitars.createMap();
 
         //検索した内容が含まれるmapキーのデータを出力する
         drums.searchMap("SUPERIOR DRUMMER 3");
@@ -69,6 +69,7 @@ public class FunctionCatalog {
         drums.searchMap("MODO DRUM 1.5");
         drums.searchMap("TOKYO SCORING DRUM KITS");
         drums.searchMap("EZ Drummer 3");
+        guitars.searchMap("Hummingbird");
 
         //ここでシリアライズ・デシリアライズを用いてcatalogMapをcatalogMapBackupにバックアップします
         //これはディープコピーというやり方で、シャロ―コピーと違い、コピー元とコピー先が独立したデータであり、コピー元やその先を変更してもその影響を受けません
@@ -80,9 +81,7 @@ public class FunctionCatalog {
 
         //リスト内のインスタンスデータを全て、catalogMapに代入する
         drums.createMap();
-        guitars.createMap();
 
-        //HashMapの特徴として、要素が順番に並ばないことがある
         //Mapデータを表示する
         drums.printMap();
 

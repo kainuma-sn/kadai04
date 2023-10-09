@@ -8,7 +8,7 @@
 
 <br>
 
-### 1.降順に並び替える<br>
+### 1-1.降順に並び替える<br>
 #### 初期データ<br>
 > ![image](https://github.com/kainuma-sn/kadai04/assets/145829664/de87628e-c1aa-4d6f-83b1-ee061daf80fa)<br>
 #### 実行したコード<br>
@@ -21,7 +21,7 @@
 > ![image](https://github.com/kainuma-sn/kadai04/assets/145829664/9088ac6a-e5d8-47fe-adee-2e295f4097db)
 <br>
 
-### 2.昇順に並び替える<br>
+### 1-2.昇順に並び替える<br>
 #### 初期データ<br>
 > ![image](https://github.com/kainuma-sn/kadai04/assets/145829664/4053aa9f-ed55-4486-83bc-36918a43802e)<br>
 #### 実行したコード<br>
@@ -33,7 +33,7 @@
 #### 出力結果<br>
 > ![image](https://github.com/kainuma-sn/kadai04/assets/145829664/0770dba6-c00c-44ba-940a-89c713ea202b)<br>
 
-### 3.Mapキーを全て小文字にし、Mapキーに"drum"を含むMapデータを抽出し、更新する<br>
+### 1-3.Mapキーを全て小文字にし、Mapキーに"drum"を含むMapデータを抽出し、更新する<br>
 #### 初期データ<br>
 > ![image](https://github.com/kainuma-sn/kadai04/assets/145829664/6d4fcf3f-3eb2-44ed-a2a6-ad42c7aee558)<br>
 #### 実行したコード<br>
@@ -79,12 +79,12 @@
 
 <br>
 
-### 1.FunctionCatalogクラス　static startメソッドを呼び出す<br>
+### 3-1.FunctionCatalogクラス　static startメソッドを呼び出す<br>
 
 #### 実行したコード<br>
 
 - main.javaクラス mainメソッド<br>
-> https://github.com/kainuma-sn/kadai04/blob/383e0fc4b4654d5a384ced43fce8f06c47725305/src/main/java/org/kadai04/Main.java#L11-L14<br>
+> https://github.com/kainuma-sn/kadai04/blob/b2679a9d30083bec44db5b3fb71f4577586d8091/src/main/java/org/kadai04/Main.java#L11-L14<br>
 
 <br>
 
@@ -96,7 +96,7 @@
 <br>
 ---<br>
 
-### 2.FunctionCatalogのクラスコンストラクタを呼び出しインスタンスを生成する<br>
+### 3-2.FunctionCatalogのクラスコンストラクタを呼び出しインスタンスを生成する<br>
 
 #### 実行したコード<br>
 
@@ -114,7 +114,7 @@
 <br>
 ---<br>
 
-### 3.ObjectCatalogクラスのインスタンスを生成する<br>
+### 3-3.ObjectCatalogクラスのインスタンスを生成する<br>
 
 #### 実行したコード<br>
 
@@ -147,7 +147,7 @@
 <br>
 ---<br>
 
-### 4.drumsリストから指定したdrumインスタンスを変更します<br>
+### 3-4.drumsリストから指定したdrumインスタンスを変更します<br>
 
 #### 実行したコード<br>
 
@@ -180,7 +180,7 @@
 <br>
 ---<br>
 
-### 5.drumリストから指定したdrumインスタンスを削除します<br>
+### 3-5.drumリストから指定したdrumインスタンスを削除します<br>
 
 #### 実行したコード<br>
 
@@ -202,7 +202,7 @@
 
 <br>
 
-### 6.drumsリスト内全てのインスタンスデータを表示する<br>
+### 3-6.drumsリスト内全てのインスタンスデータを表示する<br>
 
 #### 実行したコード<br>
 
@@ -224,7 +224,7 @@
 
 <br>
 
-### 7.guitarsリストの指定したインスタンスデータを表示する<br>
+### 3-7.guitarsリストの指定したインスタンスデータを表示する<br>
 
 #### 実行したコード<br>
 
@@ -246,7 +246,7 @@
 
 <br>
 
-### 8.drumsとguitarsリストをそれぞれMapに代入する<br>
+### 3-8.drumsとguitarsリストをそれぞれMapに代入する<br>
 
 #### 実行したコード<br>
 
@@ -272,7 +272,7 @@
 
 <br>
 
-### 9.drumsとguitarsmapのキーを検索し、値を表示する<br>
+### 3-9.drumsとguitarsmapのキーを検索し、値を表示する<br>
 
 #### 実行したコード<br>
 
@@ -297,7 +297,7 @@
 
 <br>
 
-### 10.drumsインスタンスmapのバックアップをディープコピーで作成し、表示する<br>
+### 3-10.drumsインスタンスmapのバックアップをディープコピーで作成し、表示する<br>
 
 #### 実行したコード<br>
 
@@ -332,7 +332,7 @@
 
 <br>
 
-### 11.drumsインスタンスmapのバックアップをディープコピーで作成し、表示する<br>
+### 3-11.drumsインスタンスmapのバックアップをディープコピーで作成し、表示する<br>
 
 #### 実行したコード<br>
 - FunctionCatalogクラス インスタンスフィールド<br>

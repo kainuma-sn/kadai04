@@ -57,7 +57,7 @@ public class FunctionCatalog {
         drums.printAllInfo();
 
         //指定したリストのインスタンスデータを表示する
-        guitars.printInfo(1);
+        guitars.printInfo(0);
 
         //リスト内のインスタンスデータを全て、Mapに代入する
         drums.createMap();

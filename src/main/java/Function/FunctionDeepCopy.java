@@ -7,12 +7,9 @@ import java.util.Map;
 //親クラス定義せずコピペして使えます
 public class FunctionDeepCopy {
     //実行
-    public static void start() {
-        //デフォルトメソッド
-    }
 
     //ディープコピー
-    public Map<String, List<Integer>> deepCopyCatalog(Map<String, List<Integer>> catalogList){
+    public Map<String, List<Integer>> deepCopyCatalog(Map<String, List<Integer>> catalogList) {
         //シリアライゼーション
         FunctionSerialization functionSerialization = new FunctionSerialization();
         functionSerialization.serializaiton(catalogList);
